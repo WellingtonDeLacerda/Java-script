@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da página</title>
+    <style>
+        body{
+            background-color:black;
+            height:97vh;
+            position:relative;
+            color: white;
+        }
+        main{
+            background-color:black;
+            width:90%;
+            height:400px;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%)
+            
+        }
+        table{
+            width: 100%;
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            
+        }
+        td,th{
+            border:1px solid black;
+            width:50px;
+            height:50px;
+            text-align: center;
+            font-size: 1.6em;
+            border-radius: 40%;
+            background-color: #a9a9a973;
+        }
+        th{
+            color: #44a34d;
+        }
+        div#res{
+            padding-top: 20px;
+            font:normal 1.6em arial;
+            text-align: right;
+            
+        }
+        th#c{
+            color: red;
+        }
+        th#igual{
+            background-color: #44a34d86;
+            color: white;
+        }
+        input{
+            width:40px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        
+        <table>
+ <input type="number" name="" id="p1">
+ <input type="number" name="" id="p2">
+ <div id="res">resultado..</div>
+            <hr>
+            
+            <tr>
+                <th id='c'>C</th>
+                <th>()</th>
+                <th>%</th>
+                <th>÷</th>
+            </tr>
+            <tr>
+                <td id="nu7" onclick="clicar7()">7</td>
+                <td id="nu8" onclick="clicar8()">8</td>
+                <td id="nu9" onclick="clicar9()">9</td>
+                <th>×</th>
+            </tr>
+            <tr>
+                <td id="nu4" onclick="clicar4()">4</td>
+                <td id="nu5" onclick="clicar5()">5</td>
+                <td id="nu6" onclick="clicar6()">6</td>
+                <th>-</th>
+            </tr>
+            <tr>
+                <td id="nu1" onclick="clicar1()">1</td>
+                <td id="nu2" onclick="clicar2()">2</td>
+                <td id="nu3" onclick="clicar3()">3</td>
+                <th>+</th>
+            </tr>
+            <tr>
+                <td>+/-</td>
+                <td id="nu0" onclick="clicar0()">0</td>
+                <td>,</td>
+                <th id='igual' onclick="clicari()">=</th>
+            </tr>
+        </table>
+    </main>
+<script>
+function clicar0(){
+    var n0 = window.document.querySelector('td#nu0')
+     res.innerHTML = "0"
+}
+function clicar1(){
+    var n1 = window.document.querySelector('td#nu1')
+    res.innerHTML = '1'
+}
+function clicar2(){
+    var n2 = window.document.querySelector('td#nu2')
+    res.innerHTML = '2'
+}
+function clicar3(){
+    var n3 = window.document.querySelector('td#nu3')
+    res.innerHTML = '3'
+}
+function clicar4(){
+    var n4 = window.document.querySelector('td#nu4')
+    res.innerHTML = '4'
+}
+function clicar5 () {
+    var n5 = window.document.querySelector('td#nu5')
+    res.innerHTML = '5'
+}
+function clicar6 () {
+    var n6 = window.document.querySelector('td#nu6')
+    res.innerHTML = '6'
+}
+function clicar7 () {
+    var n7 = window.document.querySelector('td#nu7')
+    res.innerHTML = '7'
+}
+function clicar8 () {
+    var n8 = window.document.querySelector('td#nu8')
+    res.innerHTML = '8'
+}
+function clicar9 () {
+    var n9 = window.document.querySelector('td#nu9')
+    res.innerHTML = '9'
+}
+function clicari () {
+    var n1 = Number.parseInt(p1.value)
+    var n2 = Number.parseInt(p2.value)
+    var i = window.document.querySelector('th#igual')
+    soma = n1 + n2
+    res.innerHTML = soma
+}
+
+</script>
+</body>
+</html>
+
+
+
+
+
+

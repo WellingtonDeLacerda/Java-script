@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treino DOM</title>
+    <style>
+        div#area{
+            font:normal 1.2em arial;
+            background-color:green;
+            width:150px;
+            height:150px;
+            line-height:150px;
+            text-align:center;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseout="sair()" onmouseenter='entrou()'>
+        interaja...
+    </div>
+    <script>
+        function clicar(){
+            var are = window.document.querySelector('div#area')
+            are.innerHTML = 'Clicou'
+            are.style.backgroundColor = 'red'
+        }
+        function sair(){
+            var are = window.document.querySelector('div#area')
+            are.innerHTML = 'saiu'
+            are.style.backgroundColor = 'green'
+        }
+        function entrou(){
+            var are = window.document.querySelector('div#area')
+            are.innerHTML = 'Entrou'
+            
+        }
+    </script>
+</body>
+</html>

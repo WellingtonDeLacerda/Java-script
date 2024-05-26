@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da página</title>
+    <style>
+        h1{
+            text-align:center;
+        }
+        input{
+            width:60px;
+        }
+        div#res{
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titu">Google</h1>
+    <hr>
+    <p class='t1'>testando códigos</p>
+    <p class='t2'>testando outro</p>
+    <input type="number" name="" id="n1">
+    <input type="number" name="" id="n2">
+    <input type="button" value="=" onclick="clicar()">
+    <p>
+        <div id="res">
+            resultado...
+        </div>
+    </p>
+ <script>
+function clicar(){
+    var nume1 = window.document.querySelector('input#n1')
+    var nume2 = window.document.querySelector('input#n2')
+    var p1 = Number.parseInt(nume1.value)
+    var p2 = Number.parseInt(nume2.value)
+    soma = p1 + p2
+    res.innerText = soma
+}
+ </script>
+</body>
+
+</html>

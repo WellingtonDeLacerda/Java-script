@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da página</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <form >
+        <h2>preencha o formulário</h2>
+        <p>
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome" placeholder="digite seu nome aqui" maxlength="20" minlength='3' required>
+        </p>
+        <p>
+        <label for="isenha">Senha:</label>
+        <input type="password" name="senha" id="isenha" placeholder="digite sua senha aqui" minlength="8" required>
+        </p>
+        <input type="button" value="Enviar" onclick="clicar()" id="clic">
+    </form>
+    <div id="res">
+        
+    </div>
+    
+<script>
+function clicar(){
+    var inome = window.document.querySelector('input#inome')
+    var isenha = window.document.querySelector('input#isenha')
+    var res = window.document.querySelector('div#res')
+    var inome = (inome.value)
+    var isenha = (isenha.value)
+    if(inome == 'wellington' && isenha == 'wellington123'){
+        res.innerHTML = 'Nome e Senha correta'
+        res.style.color = 'green'
+    }else if(inome == '' && isenha == ''){
+        
+    }else{
+        res.innerHTML = 'Nome e Senha errada '
+        res.style.color = 'red'
+    }
+}
+</script>
+</body>
+</html>

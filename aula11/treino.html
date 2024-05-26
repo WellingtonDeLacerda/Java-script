@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>documento</title>
+    <style>
+        body{
+            font-family:serif;
+        }
+        #n1,#n2{
+            width:40px;
+        }
+        div#resu{
+            padding-top:4px;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="esse">digite aqui em baixo</h2>
+    <p>
+    <input type="text" name="txt" id="txt" placeholder="digite aqui...">
+    <input type="button" value="clicar" onclick="clicar()">
+    </p>
+    <div id="res" class="ta">
+        
+    </div>
+    <input type="number" name="" id="n1">
+    <input type="number" name="" id="n2">
+    <input type="button" value="clicar" onclick="somar()">
+    <div id="resu">
+        
+    </div>
+    <script>
+        function clicar(){
+            var res = window.document.querySelector('div#res')
+            var txt = window.document.querySelector('input#txt')
+            var txt = (txt.value)
+            res.innerHTML = `<p><strong>${txt}</strong></p>`
+            res.style.color = 'red'
+            
+        }
+        function somar(){
+            var n1 = window.document.querySelector('input#n1')
+            var n2 = window.document.querySelector('input#n2')
+            var resu = window.document.querySelector('div#resu')
+            var n1 = Number.parseInt(n1.value)
+            var n2 = Number.parseInt(n2.value)
+            valor = n1 + n2
+            resu.innerHTML = valor
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da página</title>
+    
+</head>
+<body>
+    <h1>Calculando velocidade</h1>
+    <h2>digite a velocidade do seu automóvel </h2>velocidade:
+    <input type="number"  id="txtn1">
+    <input type="button" value="valor" onclick="somar()">
+    <div id="res">
+        
+    </div>
+    <script>
+        function somar(){
+       var n1 = window.document.querySelector('input#txtn1')
+var res = window.document.querySelector('div#res')
+       var r1 = Number.parseFloat(n1.value)
+       res.innerHTML = `<p>sua velocidade foi de ${r1}km/h</p>`
+       if (r1 > 70) {
+           res.innerHTML += `<p>você passou dos 70km/h. MULTADO</p>`
+        
+       }
+       res.innerHTML += 'dirija com segurança '
+       
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da página</title>
+    <style>
+        body{
+            background-color: #80eaff95;
+        }
+    </style>
+</head>
+<body>
+  <h1 id='msg'>fazendo DOM em java-script</h1>
+  <p>seja bem vindo a este site.</p>
+  <p>aprendendo cada dia mais</p>
+  <h2 class="til">em baixo irei duplicar com código DOM</h2>
+  <h3 id='til'>ola</h3>
+    <script>
+var corpo = window.document.body
+var p1 = window.document.getElementsByTagName('p')[0]
+window.document.write(p1.innerText)
+var d = window.document.getElementById('msg')
+var htil = window.document.getElementsByClassName('til')[0]
+var riu = window.document.querySelector('h3#til')
+        riu.style.color = 'pink'
+        riu.style.backgroundColor = 'white'
+        d.style.backgroundColor = 'green'
+        p1.style.color = 'darkred'
+        corpo.style.color = 'red'
+        corpo.style.backgroundColor = 'black'
+        htil.style.backgroundColor = 'aqua'
+        htil.style.paddingBottom = '200px'
+    </script>
+</body>
+</html>

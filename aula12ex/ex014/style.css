@@ -1,0 +1,30 @@
+
+@charset 'UTF-8';
+
+body{
+    background-color: #40a1ff;
+    font: normal;
+    
+}
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    background-color: white;
+    min-width: 270px;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px #00000078;
+    margin: auto;
+    padding: 10px;
+}
+div{
+    
+    text-align: center;
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

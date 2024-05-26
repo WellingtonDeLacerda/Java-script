@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da página</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>preenchemento de idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Data de nascimento:
+                <input type="number" name="txtano" id="txtano" min="0" placeholder="digite o ano" >
+            </p>
+            <p>Sexo:
+            <input type="radio" name="radi" id="mas" >
+            <label for="mas">Masculino</label>
+            <input type="radio" name="radi" id="fem">
+            <label for="fem">Feminino</label>
+            
+            </p>
+            <p>
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
+            
+        </div>
+        <div id="res">
+            preencha os dados acima para ter o resultado..
+            
+        </div>
+    </section>
+    <footer>
+        <p>© Wellington Lacerda 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+

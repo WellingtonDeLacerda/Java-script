@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da página</title>
+    <script src="treino.js"></script>
+    <style>
+        body{
+            font-family:serif;
+            background-color:lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1 id='titu'>treinando Dom em HTML-JS</h1>
+    <p class="para">meus primeiros testes</p>
+    <hr>
+    <h2 id="titu2">exemplo 1</h2>
+    <p class="para">mus phasellus indoctum feugiat singulisviderer sonet dissentiunt graeci maecenas</p>
+    <p class="para">mollis adipisci mei dolores dictaporta pericula habitasse nonumes reprimique</p>
+    <h2>exemplo 2</h2>
+    <p class="para">vituperata causae quaeque posuere teiudicabit lacinia neglegentur mea metus</p>
+    <script>
+var corpo = window.document.querySelector('body')
+var paragrafo1 = window.document.getElementsByClassName('para')[0]
+var paragrafo2 = window.document.getElementsByClassName('para')[1]
+var paragrafo3 = window.document.getElementsByClassName('para')[2]
+var paragrafo4 = window.document.getElementsByClassName('para')[3]
+var titulo = window.document.querySelector('h1#titu')
+var titulo2 = window.document.querySelector('h2#titu2')
+
+window.document.write(titulo.innerHTML)
+
+titulo2.style.backgroundColor = 'green'
+titulo2.style.padding = '5px'
+titulo2.style.color = 'white'
+corpo.style.fontFamily = 'arial'
+titulo.style.fontFamily = 'serif'
+paragrafo1.style.color = 'darkblue'
+paragrafo2.style.color = 'darkred'
+paragrafo3.style.color = 'darkblue'
+paragrafo4.style.color = 'darkred'
+    </script>
+</body>
+</html>

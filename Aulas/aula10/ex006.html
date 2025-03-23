@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    <div>
+        intereja no js...
+    </div>
+    <script>
+     var caixa = window.document.querySelector("div")
+     // primeiro vou estilizar a minha div.
+     caixa.style.width = "200px"
+     caixa.style.height = '200px'
+     caixa.style.background = "aqua"
+     caixa.style.color = "black"
+     caixa.style.display = "flex"
+     caixa.style.justifyContent = "center"
+     caixa.style.alignItems = "center"
+     caixa.style.fontWeight = "bolder"
+     caixa.style.transitionDuration = ".5s"
+     
+     // agora eu irei interagir com o site
+     
+     caixa.addEventListener("click",clicar)
+     caixa.addEventListener("mouseenter",entrar)
+     caixa.addEventListener("mouseout",sair)
+     
+     function clicar(){
+         caixa.style.color = "white"
+         caixa.style.background = "black"
+         caixa.innerText = "clicou"
+     }
+     function entrar (){
+         caixa.innerText = "Entrou"
+     }
+     function sair(){
+         caixa.innerText = "Saiu"
+         caixa.style.color = "black"
+         caixa.style.background = "aqua"
+     }
+    </script>
+</body>
+</html>

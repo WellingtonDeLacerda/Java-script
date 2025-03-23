@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+   <style>
+       body{
+           font:normal 1em arial;
+       }
+       form{
+           background:#8098ff83;
+           padding:20px;
+           min-width:250px;
+           max-width:500px;
+       }
+       input[type="number"]{
+           width:60px;
+           padding:5px;
+       }
+       input[type="button"]{
+           padding:5px;
+           border-radius:10px;
+       }
+        div#cx1{
+        margin:20px 0px;
+    }
+   </style>
+</head>
+<body>
+    <h1>Somando números</h1>
+    <form>
+        <input type="number" name="n1" id="n1"> +
+        <input type="number" name="n2" id="n2">
+        <input type="button" value="somar" onclick="somar()">
+    </form>
+    <div id="cx1" class="caixa">Resultado...</div>
+    <script>
+        var num1 = document.querySelector("input#n1")
+        var num2 = document.querySelector("input#n2")
+        var res = document.querySelector("div#cx1")
+                
+        function somar(){
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            soma = n1 + n2
+            res.innerHTML = `o valor entre ${n1} + ${n2} = <strong>${soma}</strong>`
+        }
+    </script>
+</body>
+</html>

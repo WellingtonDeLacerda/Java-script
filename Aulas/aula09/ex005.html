@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        body{
+            background-color:darkblue;
+            color:white;
+            font: normal 1em arial;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Inicializando o DOM</h1>
+    <p>Aprendendo a usar o elemento <strong>DOM</strong> em javaScript</p>
+    <p>Meu segundo parágrafo em JS</p>
+    <div class="c1">Clique em mim</div>
+    <div id="d1"> Clique em mim</div>
+    <div name="no1">Clique em mim</div>
+    <script>
+    var titulo1 = document.getElementsByTagName("h1")[0]
+    var p2 = document.getElementsByTagName("p")[1]
+    var classe = window.document.getElementsByClassName("c1")[0]
+    var ident = window.document.getElementById("d1")
+    var nome = window.document.getElementsByName("no1")[0]
+    var divi = window.document.getElementsByTagName("div")[0]
+    var todos = window.document.querySelectorAll("div")
+    titulo1.style.color = "red"
+    p2.style.backgroundImage = "linear-gradient(to right, red, transparent)"
+    p2.style.padding = "3px"
+    classe.style.color = "aqua"
+    ident.style.color = "orange"
+    nome.style.color = "limegreen"
+    divi.style.backgroundColor = "black"
+    todos.forEach((div) => {
+        div.style.background = "white"
+        div.style.border = "1px solid black"
+        div.style.margin = "3px 0px"
+        div.style.padding = "3px"
+    })
+    </script>
+</body>
+</html>

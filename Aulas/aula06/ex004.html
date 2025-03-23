@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        body{
+            font: normal 1.5em arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var s = 'Wellington de Lacerda'
+        console.log(s.length) // conta a quantidade de strings, incluindo espaços.
+        console.log(s.toUpperCase()) // deixa as letras 'MAIÚSCULAS'
+        console.log(s.toLowerCase()) // deixa as letras 'minúsculas'
+        
+        var nome = window.prompt("digite seu nome")
+        window.document.write(`Olá, ${nome}! seu nome tem ${nome.length} letras <br>`)
+        window.document.write(`Seu nome em maiúsculo -> ${nome.toUpperCase()} <br>`)
+        window.document.write(`Seu nome em minúsculo -> ${nome.toLowerCase()}`)
+        
+        var n1 = Number(window.prompt("digite um valor Real."))
+        window.document.write(` ${n1.toFixed(2).replace('.',',')} `)
+        window.document.write(n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}))
+    </script>
+</body>
+</html>

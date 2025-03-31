@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>contagens</title>
+</head>
+<body>
+    <header>
+        <h1>Contagens de números</h1>
+    </header>
+    <section>
+        <div>
+           <p>
+           <label for="txt1">Começo:</label>
+           <input type="number" name="numero1" id="txt1" >
+           </p>
+           <p>
+           <label for="txt2">Fim:</label>
+           <input type="number" name="numero2" id="txt2" >
+           </p>
+           <p>
+           <label for="passo">Passo:</label>
+           <input type="number" name="passo" id="passo" >
+           </p>
+           <input type="button" value="contar" onclick="contar()">
+        </div>
+        <div id="res">
+            Começando a contagem...
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Wellington de Lacerda</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

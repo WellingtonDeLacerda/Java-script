@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+body{
+    font: normal 1em arial;
+    background-color: #6acbff;
+}
+header{
+    text-align: center;
+    font-variant: small-caps;
+}
+section{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 7px #04040474;
+    border-radius: 20px;
+    min-width: 250px;
+    max-width: 500px;
+    margin: auto;
+}
+select{
+    width: 150px;
+}
+footer{
+    text-align: center;
+    font: italic 1em serif;
+}
